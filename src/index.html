@@ -3,11 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <a class="header__logo">
+        <img src="images/logo.png" alt="DIGITS">
+      </a>
+
+      <span class="burger_button"></span>
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">Homepages</li>
+          <li class="navigation__item">Products</li>
+          <li class="navigation__item">
+            Company
+            <img
+              class="navigation__arrow-down"
+              src="images/arrow-down.svg"
+              alt="arrow-down"
+            />
+          </li>
+          <li class="navigation__item">Pricing</li>
+          <li class="navigation__item">Blog</li>
+        </ul>
+      </nav>
+
+      <div class="header__contacts">
+        <span class="header__number">+00 123 456 789</span>
+        <span class="header__btn">Contact Us</span>
+      </div>
+    </header>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
