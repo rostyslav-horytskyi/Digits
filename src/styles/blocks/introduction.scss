@@ -1,0 +1,49 @@
+.introduction {
+  width: 100%;
+  max-height: 720px;
+  margin: auto;
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
+
+  &__content {
+    max-width: 1180px;
+    margin: auto;
+  }
+
+  &__title {
+    font-family: 'Halyard Display';
+    color: $font-blue;
+    font-size: 56px;
+    line-height: 105%;
+    text-align: center;
+    margin: 146px auto 0;
+  }
+
+  &__text {
+    font-family: 'Halyard Text';
+    color: $light-blue;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 28px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 22px;
+    width: max-content;
+    margin: 0 auto 32px;
+    z-index: 2;
+  }
+
+  &__image {
+    width: 978px;
+    height: 585px;
+    margin: auto;
+    background-image: url("/images/intro-graphic.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+}
