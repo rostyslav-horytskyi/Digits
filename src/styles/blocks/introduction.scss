@@ -4,6 +4,18 @@
   margin: auto;
   background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
 
+  @media (max-width: 1024px) {
+    max-height: 580px;
+  }
+
+  @media (max-width: 728px) {
+    max-height: 420px;
+  }
+
+  @media (max-width: 420px) {
+    max-height: 350px;
+  }
+
   &__content {
     max-width: 1180px;
     margin: auto;
@@ -16,6 +28,20 @@
     line-height: 105%;
     text-align: center;
     margin: 146px auto 0;
+
+    @media (max-width: 1024px) {
+      margin: 80px auto 0;
+    }
+
+    @media (max-width: 728px) {
+      font-size: 36px;
+      margin: 30px auto 0;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 26px;
+      margin: 20px auto 0;
+    }
   }
 
   &__text {
@@ -27,23 +53,46 @@
     text-align: center;
     margin-top: 26px;
     margin-bottom: 28px;
+
+    @media (max-width: 728px) {
+      font-size: 14px;
+    }
   }
 
   &__buttons {
     display: flex;
     gap: 22px;
     width: max-content;
-    margin: 0 auto 32px;
+    margin: 0 auto;
     z-index: 2;
+
+    @media (max-width: 728px) {
+      gap: 12px;
+    }
+  }
+
+  &__image-holder {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   &__image {
-    width: 978px;
+    display: flex;
+    flex-basis: 978px;
     height: 585px;
-    margin: auto;
+    margin: 32px 10px 0;
     background-image: url("/images/intro-graphic.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: top center;
+
+    @media (max-width: 1024px) {
+      height: 385px;
+    }
+
+    @media (max-width: 728px) {
+      height: 285px;
+    }
   }
 }
