@@ -1,6 +1,6 @@
 .about {
   background-color: $white;
-  padding-top: 186px;
+  padding: 186px 0 190px;
 
   &__content {
     max-width: 1180px;
@@ -17,52 +17,26 @@
     color: $grey-text;
     margin: 0 0 48px;
 
-    @media (max-width: 1280px) {
+    @media (max-width: $notebook) {
       padding: 0 10px;
     }
   }
 
   &__title {
+    @include title;
     max-width: 500px;
-    font-family: 'Halyard Display';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: center;
-    color: $font-blue;
     margin: 162px auto 122px;
-
-    @media (max-width: 1280px) {
-      padding: 0 10px;
-      line-height: 50px;
-    }
-
-    @media (max-width: 1024px) {
-      margin: 80px auto 62px;
-      line-height: 40px;
-    }
-
-    @media (max-width: 728px) {
-      font-size: 36px;
-      margin: 50px auto 42px;
-    }
-
-    @media (max-width: 420px) {
-      font-size: 26px;
-      margin: 40px auto 22px;
-    }
   }
 
   &__benefits {
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 1280px) {
+    @media (max-width: $notebook) {
       padding: 0 10px;
     }
 
-    @media (max-width: 924px) {
+    @media (max-width: $tablet) {
       justify-content: center;
     }
   }
@@ -70,7 +44,11 @@
   &__image {
     margin-top: -250px;
 
-    @media (max-width: 924px) {
+    @media (max-width: $notebook) {
+      margin-top: -200px;
+    }
+
+    @media (max-width: $tablet) {
       display: none;
     }
   }

@@ -12,8 +12,9 @@
   overflow: hidden;
   cursor: pointer;
   width: max-content;
+  z-index: 3;
 
-  @media (max-width: 728px) {
+  @media (max-width: $tablet) {
     padding: 0 16px;
     line-height: 40px;
   }
