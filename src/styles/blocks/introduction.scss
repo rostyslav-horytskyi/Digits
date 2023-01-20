@@ -22,7 +22,7 @@
   }
 
   &__title {
-    font-family: "Halyard Display";
+    font-family: "Halyard Display", sans-serif;
     color: $font-blue;
     font-size: 56px;
     line-height: 105%;
@@ -41,7 +41,7 @@
   }
 
   &__text {
-    font-family: "Halyard Text";
+    font-family: "Halyard Text", sans-serif;
     color: $light-blue;
     font-weight: 400;
     font-size: 18px;

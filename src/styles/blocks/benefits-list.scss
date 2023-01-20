@@ -34,7 +34,7 @@
 
     &--primary {
       color: $font-blue;
-      font-family: 'Halyard Display';
+      font-family: 'Halyard Display', sans-serif;
       font-weight: 500;
       font-size: 22px;
       line-height: 125%;
@@ -48,7 +48,7 @@
 
     &--secondary {
       color: $light-blue;
-      font-family: 'Halyard Text';
+      font-family: 'Halyard Text', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
