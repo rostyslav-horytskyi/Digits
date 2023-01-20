@@ -8,7 +8,7 @@
   transition: all 0.3s;
   transition-delay: 0.1s;
   margin-left: 25px;
-  z-index: 2;
+  z-index: 5;
 
   &:before {
     @include burger-button-line;
